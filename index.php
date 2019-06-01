@@ -1,4 +1,6 @@
 <?php
+use Yii;
+use app\models\SomeDataModel;
 
 $userId = Yii::$app->user->id;
 $key = SomeDataModel::className() . ':' . $userId . '_' . $date . '_' . $type;
